@@ -1,0 +1,27 @@
+{
+  "name": "package1",
+  "version": "0.0.0",
+  "description": "",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "private": true,
+  "main": "lib/package1.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "precommit": "lint-staged",
+    "lint": "eslint -f codeframe \"**/*.js\"",
+    "start": "node lib/package1.js",
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "devDependencies": {
+    "eslint": "^7.15.0",
+    "lint-staged": "^10.5.3"
+  }
+}
